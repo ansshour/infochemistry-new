@@ -1,0 +1,16 @@
+.container {
+    display: inline-flex;
+    border: 1px solid #BBBBBB;
+    border-radius: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.container p {
+    padding: 9px 25px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+    user-select: none;
+}

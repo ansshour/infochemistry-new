@@ -1,0 +1,39 @@
+.inner {
+    padding: 5px 25px 8px 25px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    user-select: none;
+}
+
+.inner p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.detail {
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.active {
+    padding: 10px 20px;
+    max-height: 100%;
+}
+
+.nameIn {
+    width: 100%;
+    max-width: 351px;
+}
+
+.plus {
+    transition: 0.3s;
+}

@@ -1,0 +1,115 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    overflow: hidden;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.questions {
+    display: grid;
+    gap: 19px;
+}
+
+.controller {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    border-radius: 20px;
+    margin-left: 20px;
+    user-select: none;
+}
+
+.controller img {
+    width: 17px;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content * {
+    margin: 0;
+}
+
+
+.hasQuiz {
+    cursor: pointer;
+    display: flex;
+    gap: 7px;
+    font-size: 18px;
+    margin: 20px 0;
+    align-items: center;
+    user-select: none;
+}
+
+.btn {
+    outline: none;
+    border: 1px solid #121212;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 10px;
+    color: #121212;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    background-color: inherit;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.plus {
+    font-family: "Times New Roman";
+    font-family: bold;
+    font-size: 20px;
+}
+
+.passingScore {
+    background-color: white;
+    border-radius: 5px;
+    padding: 29px 37px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.title {
+    font-family: "Rubik", sans-serif;
+    color: #121212;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 17px;
+}
+
+.isActivePassingScore {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.passScore {
+    font-size: 14px;
+    width: 38px;
+    height: 38px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid lightgray;
+    color: #BCBCBC;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.maxScore {
+    color: #BCBCBC;
+}

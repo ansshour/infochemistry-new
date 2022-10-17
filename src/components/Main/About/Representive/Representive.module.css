@@ -1,0 +1,38 @@
+.representive {
+    background-color: white;
+    display: flex;
+    padding: 20px 50px;
+    padding-bottom: 0px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 37px -1px rgba(34, 60, 80, 0.2);
+    align-items: center;
+    gap: 40px;
+    box-sizing: border-box;
+    max-height: 295px;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 20px;
+    line-height: 114.69%;
+    margin-bottom: 15px;
+}
+
+.image {
+    align-self: flex-end;
+}
+
+
+@media (max-width: 800px) {
+    .representive {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 20px;
+        max-height: 10000px;
+    }
+}

@@ -1,0 +1,75 @@
+.container {
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    user-select: none;
+}
+
+.select {
+    padding: 5px 0px;
+    height: 38px;
+    width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 7px 10px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    z-index: 0;
+    background-color: white;
+    overflow: hidden;
+}
+
+.elems {
+    display: flex;
+    gap: 10px;
+}
+
+.open {
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    z-index: 2;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+    position: absolute;
+    background-color: white;
+}
+
+.open p {
+    padding: 7px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+
+
+.open p:hover {
+    background-color: rgb(243, 241, 241);
+}
+
+.open.active {
+    max-height: 1000px;
+    transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    transform-origin: 0px 50%;
+    transition: 0.2s;
+}
+
+
+.placeholder {
+    color: #757575;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+}

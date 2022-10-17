@@ -1,0 +1,241 @@
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #121212;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #121212;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #121212;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #121212;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #121212;
+}
+
+::placeholder {
+    /* Most modern browsers support this now. */
+    color: #121212;
+}
+
+.container {
+    margin: 33px 39px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px -30px rgba(34, 60, 80, 0.12);
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 50px;
+    padding: 10px;
+    padding-right: 35px;
+    padding-bottom: 100px;
+}
+
+.avatarBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 120px;
+    box-sizing: border-box;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.fullImg {
+    height: 100%;
+    width: auto;
+}
+
+
+.delBtn {
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #121212;
+    transition: 0.3s;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+.delBtn:hover {
+    color: rgb(36, 36, 36);
+}
+
+.mainInfo {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 24px;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 25px;
+    color: #121212;
+    margin-bottom: 24px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 18px;
+    color: #121212;
+}
+
+.content {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.descInfo {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.descContent {
+    user-select: none;
+    width: 550px;
+    box-sizing: border-box;
+    border: 1px solid #121212;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.description {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #9D9D9D;
+}
+
+.phone {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.input {
+    padding: 7px 10px;
+    border: 1px solid #B4B4B4;
+    outline: none;
+    font-family: inherit;
+    width: 192px;
+    border-radius: 3px;
+    color: #121212;
+    font-size: 14px;
+
+}
+
+.form {
+    margin-top: 8px;
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    outline: none;
+    border: 1px solid #121212;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 10px;
+    color: #121212;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    background-color: inherit;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.login {
+    margin-top: 24px;
+}
+
+.email {
+    margin-top: 8px;
+}
+
+.changePassword {
+    margin-top: 24px;
+}
+
+
+.btnWrap {
+    margin-top: 8px;
+}
+
+
+.inputPass {
+    padding: 7px 10px;
+    padding-right: 40px;
+    border: 1px solid #B4B4B4;
+    outline: none;
+    font-family: inherit;
+    border-radius: 3px;
+    color: #121212;
+    font-size: 14px;
+    width: 332px;
+}
+
+.password p {
+    color: #121212;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.passWrapp {
+    margin-top: 16px;
+}
+
+.password {
+    margin-bottom: 16px;
+}
+
+.buttonsChangePass {
+    display: flex;
+    gap: 5px;
+    width: 332px;
+}
+
+.newPassError {
+    margin-top: 3px;
+    color: #C74F4F !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+}
+
+.inputWrapp {
+    position: relative;
+    width: 332px;
+}
+
+.inputWrapp img {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    cursor: pointer;
+}

@@ -1,0 +1,47 @@
+.studentCard {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    padding: 10px 0;
+    align-items: center;
+    gap: 20px;
+    justify-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: white;
+}
+
+.avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-color: lightblue;
+    flex-shrink: 0;
+    justify-self: flex-start;
+}
+
+.fio {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.downloadReport {
+    cursor: pointer;
+}
+
+.name {}
+
+.isTrueWrapp {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.isTrueWrapp p {
+    color: #747474;
+    font-weight: 400;
+    font-size: 14px;
+}

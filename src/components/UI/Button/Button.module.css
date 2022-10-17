@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E3F8FE;
+    transition: background-color 0.2s;
+    border: 1px solid black;
+    color: #121212;
+    cursor: pointer;
+    padding: 7px 25px;
+}
+
+.container:hover {
+    background-color: white;
+}
+
+.container.white {
+    background-color: white;
+}
+
+.container.white:hover {
+    background-color: #E3F8FE;
+}

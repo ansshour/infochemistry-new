@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    gap: 50px;
+}
+
+.image {
+    flex-basis: 300px;
+    flex-shrink: 0;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.rightInfo {
+    width: 610px;
+    display: block;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.isActive {
+    padding: 4px 16px;
+    border-radius: 16px;
+    background-color: #F0EDED;
+    display: inline-block;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+
+.isActive p {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.desc {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.nearRecord {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.record {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+
+}
+
+.record>* {
+    flex: 1;
+}
+
+.buttons {
+    margin-top: 12px;
+}

@@ -1,0 +1,48 @@
+.container {
+    background-color: #EEF2F4;
+    border-radius: 9px;
+    padding: 22px 15px;
+    display: flex;
+    font-family: "Rubik", sans-serif;
+    gap: 16px;
+    min-height: 100px;
+}
+
+.avatar {
+    background-color: white;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    /* border: 1px solid black; */
+}
+
+.name {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.persInfo {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 14.7px;
+    color: #454545;
+    margin-bottom: 5px;
+}
+
+.withIcon {
+    display: flex;
+    align-items: center;
+    gap: 8.69px;
+    margin-bottom: 5px;
+}
+
+.withIcon p {
+    font-weight: 300;
+    font-size: 14px;
+    color: #454545;
+}
+
+.withIcon:last-child {
+    margin-bottom: 0;
+}

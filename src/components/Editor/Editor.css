@@ -1,0 +1,29 @@
+.jodit-react-container ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.jodit-react-container ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+.jodit-react-container ul ul,
+ol ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-left: 15px;
+}
+
+.jodit-react-container ol ol,
+ul ol {
+    list-style-type: lower-latin;
+    list-style-position: inside;
+    margin-left: 15px;
+}
+
+
+.note-editable,
+.note-editing-area {
+    background-color: white !important;
+}

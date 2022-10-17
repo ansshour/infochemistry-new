@@ -1,0 +1,193 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: none;
+    }
+}
+
+
+/*container*/
+
+
+
+.title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37.5px;
+    position: relative;
+    z-index: 1;
+}
+
+.title__wrapper {
+    width: 250px;
+    position: relative;
+    z-index: 0;
+}
+
+.title__wrapper:before {
+    content: "";
+    width: 100%;
+    height: 18px;
+    background-color: #C8F1FD;
+    position: absolute;
+    z-index: 1;
+    top: 11px;
+    left: -10px;
+}
+
+
+.topBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.topBlock__title {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.numberWeek {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+}
+
+.numberWeek p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.warningBlock {
+    justify-self: end;
+}
+
+
+@media (max-width: 1200px) {
+    .topBlock div {
+        justify-self: center;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .topBlock {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .topBlock div {
+        justify-self: start;
+    }
+}
+
+
+.scheduleGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.dayOfWeek {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+
+}
+
+.area {
+    min-height: 200px;
+    min-width: 200px;
+    border-bottom: 1px solid lightgray;
+    /* overflow: hidden; */
+    display: flex;
+}
+
+.scheaduleWrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto 100fr;
+    grid-template-areas:
+        "timeWrite week"
+        "time content";
+    border-top: 1px solid lightgray;
+    margin-bottom: 75px;
+    user-select: none;
+}
+
+.Weeks {
+    grid-area: week;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border-bottom: 1px solid lightgray;
+}
+
+.Weeks p {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 17px 0;
+    justify-self: center;
+}
+
+.times {
+    grid-area: time;
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    align-items: center;
+    border-right: 1px solid lightgray;
+    padding-right: 20px;
+}
+
+.times p {
+    font-weight: 300;
+    font-size: 20px;
+    justify-self: center;
+}
+
+.timeWrite {
+    grid-area: timeWrite;
+    font-weight: 500;
+    font-size: 20px;
+    justify-self: center;
+    padding: 17px 0;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+@media (max-width: 1440px) {
+    .scheaduleWrapper {
+        overflow-x: scroll;
+    }
+}

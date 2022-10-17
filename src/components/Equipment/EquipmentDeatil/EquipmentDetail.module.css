@@ -1,0 +1,58 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: none;
+    }
+}
+
+.modal__title {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 54px;
+}
+
+.wrapper {
+    display: flex;
+    gap: 32px;
+}
+
+.desc__name {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.modal__desc {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.button {
+    margin-top: 32px;
+}

@@ -1,0 +1,217 @@
+/*container*/
+
+
+.container {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 215px;
+    gap: 20px;
+    margin: 18px 32px 32px 18px;
+    font-family: "Rubik", sans-serif;
+}
+
+
+.editor {
+    overflow: hidden;
+}
+
+.wrapper {
+    display: grid;
+}
+
+.outer {
+    width: 100%;
+    overflow: hidden;
+}
+
+.name {
+    padding: 20px 30px;
+    padding-bottom: 0;
+}
+
+.group {
+    padding: 20px 30px;
+    padding-bottom: 0;
+}
+
+.quiz {
+    box-sizing: border-box;
+    padding: 20px 30px;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.errors {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    /* border: 1px solid black; */
+    padding-left: 100px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+.errors div {
+    margin-bottom: 20px;
+}
+
+.isQuiz,
+.isReport {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.isQuiz {
+    margin-bottom: 10px;
+}
+
+.labOptions {
+    padding: 20px 30px;
+}
+
+
+/* @media (max-width: 992px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        min-width: 700px;
+    }
+
+    .editor {
+        border-right: none;
+        min-height: 500px;
+    }
+
+    .container {
+        overflow-x: scroll;
+    }
+
+    .editInfo {
+        border-left: none !important;
+        border-top: 1px solid black;
+    }
+} */
+
+
+
+.editInfo {
+    position: relative;
+}
+
+
+
+@media (max-width: 1451px) {
+    .outer {
+        overflow-x: scroll;
+    }
+}
+
+.outerOuter {
+    background-color: white;
+    padding: 24px 32px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px -30px rgba(34, 60, 80, 0.12);
+}
+
+
+
+
+.actionsInner {
+    background-color: white;
+    border-radius: 10px;
+    padding: 24px 12px;
+    height: auto;
+    box-shadow: 0px 0px 30px -30px rgba(34, 60, 80, 0.12);
+    width: 220px;
+    position: fixed;
+}
+
+.actionsInner .title {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.labOptions p {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.editorTitle {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.editor {
+    margin-left: 30px;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.back p {
+    font-weight: 500;
+    font-size: 20px;
+
+    font-weight: "Rubik", sans-serif;
+}
+
+
+.topEditInfo {
+    width: 703px;
+}
+
+.confirmTitle {
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+    font-size: 25px;
+    margin-bottom: 16px;
+}
+
+.confirmText {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.buttonsM {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.confirm {
+    padding: 35px 40px;
+    max-width: 658px;
+}
+
+.confirmCheckbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.confirmCheckbox p {
+    font-weight: 500;
+}

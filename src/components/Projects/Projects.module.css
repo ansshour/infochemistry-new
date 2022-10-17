@@ -1,0 +1,150 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: none;
+    }
+}
+
+.wrapper {
+    display: flex;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.projectCards {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.circle {
+    flex-basis: 50%;
+}
+
+.circleElement {
+    width: 518px;
+    height: 518px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.circleElementMainBasic {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-36deg);
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.first {
+    background-image: conic-gradient(#DF6C6C 72deg, rgba(0, 0, 0, 0) 72deg 144deg, rgba(0, 0, 0, 0) 144deg 216deg, rgba(0, 0, 0, 0) 216deg 288deg, rgba(0, 0, 0, 0) 288deg 360deg);
+}
+
+.second {
+    background-image: conic-gradient(rgba(0, 0, 0, 0) 72deg, #EDE75B 72deg 144deg, rgba(0, 0, 0, 0) 144deg 216deg, rgba(0, 0, 0, 0) 216deg 288deg, rgba(0, 0, 0, 0) 288deg 360deg);
+}
+
+.third {
+    background-image: conic-gradient(rgba(0, 0, 0, 0) 72deg, rgba(0, 0, 0, 0) 72deg 144deg, #7C6CDF 144deg 216deg, rgba(0, 0, 0, 0) 216deg 288deg, rgba(0, 0, 0, 0) 288deg 360deg);
+}
+
+.fourth {
+    background-image: conic-gradient(rgba(0, 0, 0, 0) 72deg, rgba(0, 0, 0, 0) 72deg 144deg, rgba(0, 0, 0, 0) 144deg 216deg, #6CD1DF 216deg 288deg, rgba(0, 0, 0, 0) 288deg 360deg);
+}
+
+.fifth {
+    background-image: conic-gradient(rgba(0, 0, 0, 0) 72deg, rgba(0, 0, 0, 0) 72deg 144deg, rgba(0, 0, 0, 0) 144deg 216deg, rgba(0, 0, 0, 0) 216deg 288deg, #8ADF6C 288deg 360deg);
+}
+
+
+
+.active {
+    transform: rotate(-36deg) scale(1.05);
+    z-index: 1;
+}
+
+.center {
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 6;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circleCard {
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-weight: 800;
+    font-size: 24px;
+    color: #121212;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    z-index: 8;
+    transform: rotate(0);
+    width: 179px;
+}
+
+.labs {
+    left: 173px;
+    top: 5px;
+}
+
+.robo {
+    left: -42px;
+    top: 158px;
+}
+
+
+.search {
+    right: -42px;
+    top: 158px;
+}
+
+.mine {
+    top: 381px;
+    right: 310px;
+}
+
+.vr {
+    right: 28px;
+    top: 381px;
+}

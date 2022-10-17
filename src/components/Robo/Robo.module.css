@@ -1,0 +1,37 @@
+.container {
+    margin: 18px 32px;
+    padding: 24px 32px;
+    background-color: white;
+    min-height: 1000px;
+    border-radius: 10px;
+    font-family: "Rubik", sans-serif;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.back P {
+    font-size: 20px;
+    font-weight: 500;
+    color: #121212;
+}
+
+.description {
+    color: #121212;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.record {
+    margin-top: 32px;
+}
+
+.record>div {
+    margin-bottom: 50px;
+}

@@ -1,0 +1,68 @@
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 28px;
+    padding-bottom: 23px;
+    background-color: #E3F8FE;
+    border: 1px solid black;
+    font-size: 18px;
+    font-weight: 300;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.desc {
+    font-size: 14px;
+    color: #9C9C9C;
+}
+
+.lang {
+    border-radius: 32px;
+    border: 1px solid black;
+    width: 66px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.studyProgram {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.studyProgram svg {
+    fill: #9C9C9C;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        font-size: 14px;
+    }
+
+    .desc {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 382px) {
+    .container {
+        flex-direction: column;
+        gap: 30px;
+        font-size: 18px;
+    }
+
+    .desc {
+        font-size: 14px;
+    }
+}

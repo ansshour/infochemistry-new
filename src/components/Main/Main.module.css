@@ -1,0 +1,369 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: none;
+    }
+}
+
+
+
+
+.wrapper {
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left {
+    margin-top: 93px;
+    z-index: 1;
+    position: relative;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 70px;
+    margin-bottom: 8px;
+    line-height: 70px;
+    color: white;
+}
+
+.titleDesc {
+    font-weight: 400;
+    font-size: 20px;
+    color: #BBBBBB;
+    margin-bottom: 32px;
+    line-height: 25px;
+    ;
+}
+
+.right {
+    margin-top: 227px;
+    padding-left: 200px;
+    position: relative;
+}
+
+
+.link {
+    background-color: rgba(255, 255, 255, 0.4);
+    display: inline-block;
+    padding: 13px 34px;
+    border-radius: 12px;
+    backdrop-filter: blur(1px);
+    cursor: pointer;
+    user-select: none;
+    color: white;
+}
+
+.link p {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.first {
+    margin-left: 70px;
+}
+
+.second {
+    margin-left: 300px;
+}
+
+.third {
+    margin-left: 50px;
+}
+
+.links>div {
+    margin: 20px 0;
+}
+
+
+
+.toggleLang {
+    display: inline-flex;
+    outline: 1px solid white;
+    overflow: hidden;
+    border-radius: 14.5px;
+    cursor: pointer;
+    user-select: none;
+    margin-top: 150px;
+    color: white;
+}
+
+.toggleLang p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.active {
+    background-color: #79F3EC;
+    color: black;
+}
+
+.ru {
+    padding: 6px 6px 7px 13px;
+}
+
+.en {
+    padding: 6px 13px 7px 6px;
+}
+
+.infochemistryDesc {
+    padding-top: 110px;
+    margin-bottom: 44px;
+    z-index: 2;
+    position: relative;
+}
+
+.infochemistryTitle {
+    text-align: center;
+    font-weight: 800;
+    font-size: 40px;
+    color: white;
+}
+
+.infochemistryText {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+    color: white;
+}
+
+.pages {
+    position: relative;
+    padding-bottom: 190px;
+    padding-top: 121px;
+}
+
+.bgImages {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bgImages img {
+    transform: translateX(-50px);
+}
+
+.pages__links {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.pagesLink {
+    display: inline-flex;
+    align-items: flex-end;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(1px);
+    padding: 23px 24px;
+    width: 350px;
+    height: 168px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.pagesLink:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.advantages {
+    padding-top: 117px;
+    padding-bottom: 178px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.advantagesBg {
+    position: absolute;
+    height: 1000px;
+    right: 0px;
+    top: -300px;
+    transform: rotate(-22.48deg) translateX(50%);
+}
+
+.advantagesMain .title {
+    font-weight: 800;
+    font-size: 40px;
+    color: black;
+    line-height: 40px;
+}
+
+.advantagesMain .desc {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.advantagesMain {
+    flex-basis: 450px;
+}
+
+
+.advantagesWrapp {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    position: relative;
+}
+
+.advantagesInfo {
+    padding: 24px 13px;
+    background-color: rgba(238, 242, 244, 0.4);
+    backdrop-filter: blur(1px);
+    border-radius: 21px;
+    flex-basis: 30%;
+}
+
+.advantagesTitle {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.advantagesDesc {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.events {
+    background-color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.eventsInner {
+    background-color: #EEF2F4;
+    padding: 85px 72px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.eventsTitle {
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.eventsDesc {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 16px;
+    margin-bottom: 33px;
+}
+
+.eventsRight {
+    position: relative;
+}
+
+
+.eventsRight img {
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.partners {
+    background-color: white;
+    padding-top: 256px;
+    padding-bottom: 56px;
+    padding-bottom: 400px;
+}
+
+.partnersTitle {
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.partnersDesc {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.partnersText {
+    position: relative;
+    z-index: 2;
+    width: 65%;
+    padding-left: 300px;
+}
+
+.partnersInner {
+    position: relative;
+}
+
+.partnersImage1 {
+    position: absolute;
+    bottom: -180px;
+    left: -5px;
+    z-index: 0;
+}
+
+.partnersImage2 {
+    position: absolute;
+    right: 100px;
+    bottom: -120px;
+}
+
+.partnersImage3 {
+    position: absolute;
+    bottom: -200px;
+    right: -50px;
+}
+
+
+.gif {
+    position: absolute;
+    width: 971px;
+    transform: translateX(-65px);
+    z-index: 0;
+    right: -200px;
+    top: -150%;
+}
+
+.advantagesImgWrapper {}

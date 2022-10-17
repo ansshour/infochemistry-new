@@ -1,0 +1,291 @@
+/* .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: none;
+    }
+} */
+
+.container {
+    background-color: #F9F9F9;
+    overflow-x: scroll;
+    font-family: "Rubik", sans-serif;
+}
+
+/*container*/
+
+
+.wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: 365px 3fr 250px;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+        "l m r"
+        "l m r";
+}
+
+.left {
+    grid-area: l;
+}
+
+.wrapper__main {
+    grid-area: m;
+    margin: 25px 15px 15px 15px;
+    box-shadow: 0px 0px 30px -30px rgba(34, 60, 80, 0.12);
+    overflow-y: scroll;
+}
+
+.right {
+    grid-area: r;
+}
+
+.footer {
+    grid-area: f;
+    margin-left: 15px;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.left__inner {
+    /* position: fixed; */
+    /* padding-top: 100px !important; */
+    width: 365px;
+    top: 0;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: auto;
+    height: 100vh;
+    padding: 0px !important;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+    box-shadow: 0px 0px 30px -30px rgba(34, 60, 80, 0.12);
+    position: fixed;
+    top: 71px;
+}
+
+
+.labList {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding-left: 19px;
+}
+
+.labsList:first-child {
+    margin-top: 15px;
+}
+
+.labsList li {
+    cursor: pointer;
+    display: flex;
+    gap: 11px;
+    align-items: center;
+}
+
+.title {
+    font-size: 24px;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.title p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.main {
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    min-width: 700px;
+}
+
+.title__main {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 30px;
+}
+
+.tableHead {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    justify-items: center;
+    background-color: white;
+}
+
+.table {
+    background-color: white;
+}
+
+.headTable {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+
+/* @media (max-width: 1480px) {
+    .wrapper {
+        grid-template-columns: 200px 1fr 200px;
+    }
+} */
+
+/* @media (max-width: 1200px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .wrapper__main {
+        overflow-x: scroll;
+    }
+
+    .main {
+        min-width: 1170px;
+    }
+} */
+
+
+.button__wrapper {
+    width: 197px;
+}
+
+.labListItem {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    transition: .2s;
+    /* border: 1px solid black; */
+    padding: 12.5px 16px;
+    color: #121212;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.labListItem p {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.tableHead {
+    border-bottom: 2px solid black;
+}
+
+.labListItem:hover {
+    background-color: #79f3ec !important;
+}
+
+.labList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.buttonWrapp {
+    display: block;
+    padding: 16px 25px;
+    position: relative;
+    bottom: 10px;
+    margin-top: 20px;
+}
+
+.performance {
+    background-color: white;
+    padding: 24px 12px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px -30px rgba(34, 60, 80, 0.12);
+}
+
+.performanceTitle {
+    margin-bottom: 12px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.performanceDesc {
+    font-weight: 400;
+    font-size: 14px;
+    color: #6F6E6E;
+    margin-bottom: 20px;
+}
+
+.right {
+    margin-top: 25px;
+    margin-right: 30px;
+}
+
+.right__inner {
+    position: fixed;
+    top: 96px;
+    width: 230px;
+}
+
+.actions {
+    padding: 24px 12px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px -30px rgba(34, 60, 80, 0.12);
+    margin-top: 16px;
+}
+
+.titleActions {
+    margin-bottom: 12px;
+    font-size: 25px;
+    font-weight: 500;
+}

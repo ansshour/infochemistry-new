@@ -1,0 +1,29 @@
+.container {
+    background-color: #EEF2F4;
+    padding: 12px 20px;
+    max-width: 432px;
+    width: 100%;
+    border-radius: 11px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s;
+}
+
+.name {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 8px;
+    color: black;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+}
+
+.container:hover {
+    background-color: #DDEDF5;
+}

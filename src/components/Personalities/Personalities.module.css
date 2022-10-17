@@ -1,0 +1,143 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: none;
+    }
+}
+
+
+/*container*/
+
+.title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37.5px;
+    color: #1F2937;
+    margin-bottom: 12px;
+}
+
+.searchTitle {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+
+.personalities {
+    display: flex;
+}
+
+
+@media (max-width: 800px) {
+    .personalities {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+.inputWrapper {
+    display: flex;
+}
+
+.search {
+    width: 100%;
+    margin-bottom: 34px;
+}
+
+.searchInput {
+    padding: 12px 15px;
+    font-weight: 300;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    border: 1px solid #858585;
+    border-radius: 10px 0 0 10px;
+    border-right: none;
+    flex-basis: 90%;
+}
+
+.searchButton {
+    background-color: white;
+    color: #121212;
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: inherit;
+    border-radius: 0 10px 10px 0;
+    outline: none;
+    border: 1px solid #858585;
+    cursor: pointer;
+    transition: 0.3s;
+    flex-basis: 10%;
+}
+
+.searchButton:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* // */
+
+.personalitiesCategory {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 5px 10px;
+    padding-bottom: 3px;
+    cursor: pointer;
+    margin-bottom: 34px;
+    color: #858585;
+    transition: color 0.3s;
+    user-select: none;
+}
+
+.personalitiesCategory:hover {
+    color: #121212;
+}
+
+.personalitiesCategories {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.personalitiesCategory.active {
+    color: #121212;
+    border-bottom: 2px solid black;
+}
+
+.personalitiesCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding-bottom: 70px;
+}
+
+.empty {
+    min-height: 500px;
+}

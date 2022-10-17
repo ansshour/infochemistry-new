@@ -1,0 +1,54 @@
+.button {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 7px 32px;
+    font-family: inherit;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    display: inline-block;
+    outline: none;
+    border: none;
+    user-select: none;
+}
+
+
+.type_1 {
+    background-color: #121212;
+    color: white;
+    border: 1px solid black;
+}
+
+
+.type_2 {
+    background-color: transparent;
+    color: #121212;
+    border: 1px solid black;
+}
+
+.type_1:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.type_2:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.type_3 {
+    background-color: white;
+    color: #121212;
+}
+
+.type_3:hover {
+    background-color: rgb(217, 217, 217);
+}
+
+.type_4 {
+    color: white;
+    background-color: inherit;
+    border: 1px solid white;
+}
+
+.type_4:hover {
+    background-color: rgba(211, 211, 211, 0.05);
+}

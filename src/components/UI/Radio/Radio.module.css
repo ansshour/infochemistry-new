@@ -1,0 +1,23 @@
+.radio {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.internalRadio {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #121212;
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.radioReal:checked+.internalRadio {
+    opacity: 1;
+}

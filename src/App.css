@@ -1,0 +1,14 @@
+.wrapperR {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.mainR {
+    flex: 1 1 auto;
+}
+
+.headerR {
+    position: sticky;
+    top: 0;
+}

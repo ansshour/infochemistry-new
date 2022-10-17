@@ -1,0 +1,10 @@
+.container {
+    box-sizing: border-box;
+    max-width: 385px;
+    height: 82px;
+    padding: 20px 30px;
+    display: inline-flex;
+    border: 1px solid #FFA800;
+    gap: 30px;
+    border-radius: 20px;
+}

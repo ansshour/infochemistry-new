@@ -1,0 +1,92 @@
+.container {
+    background: rgba(239, 248, 250, 0.6);
+    backdrop-filter: blur(8.5px);
+    border-radius: 10px;
+    padding: 22px 27px;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.directionsTitle,
+.mainPersonTitle,
+.directionsTitleBottom {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.groupPrograms {
+    list-style: disc;
+    margin-left: 15px;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 24px;
+    gap: 100px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+}
+
+.person {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 24px;
+}
+
+.nameLeader {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.personInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.phone,
+.email {
+    font-weight: 400;
+    font-size: 14px;
+    color: #808080;
+}
+
+.bottom {}
+
+.left {
+    flex-basis: 50%;
+}
+
+.bottomList {
+    list-style: square;
+    margin-left: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+.projectsTitle {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.projectsDesc {
+    font-weight: 400;
+    font-size: 14px;
+    color: #524F4F;
+}
+
+
+.wrapper {}

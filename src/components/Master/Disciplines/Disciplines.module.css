@@ -1,0 +1,143 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: none;
+    }
+}
+
+
+/*container*/
+
+.content {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    font-size: 18px;
+}
+
+
+.title {
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+
+.list li {
+    list-style: disc;
+    margin-left: 25px;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "first second third"
+        "fouth second fivth";
+    box-shadow: 0px 0px 38px 15px rgba(34, 60, 80, 0.05);
+    position: relative;
+    z-index: 2;
+}
+
+.area {
+    border: 1px solid black;
+    padding: 25px;
+}
+
+.first {
+    grid-area: first;
+    border-bottom: 0;
+}
+
+.second {
+    grid-area: second;
+    border-left: 0;
+    border-right: 0;
+}
+
+.third {
+    grid-area: third;
+    border-bottom: 0;
+}
+
+.fouth {
+    grid-area: fouth;
+}
+
+.fivth {
+    grid-area: fivth;
+}
+
+.tableTitle {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+
+.listItem {
+    font-size: 14px;
+    font-weight: 300;
+    color: #9C9C9C;
+}
+
+
+.tableList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+@media (max-width: 1100px) {
+    .table {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+    }
+
+    .area {
+        border: none;
+        border-bottom: 1px solid black;
+        ;
+    }
+
+    .area:last-child {
+        border-bottom: none;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
