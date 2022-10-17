@@ -36,9 +36,9 @@ export const Footer = () => {
     return (
         <div className={styles.footerInner}>
             <div className={styles.container}>
-                <div className={[styles.footer, styles.footer_first].join(" ")} style={(window.location.pathname === "/" || window.location.pathname === "/contacts") ? {} : { paddingTop: "69px" }}>
+                <div className={[styles.footer, styles.footer_first].join(" ")} style={(window.location.pathname === "/") ? {} : { paddingTop: "69px" }}>
                     <div className={styles.left}>
-                        {!(window.location.pathname === "/" || window.location.pathname === "/contacts") && (
+                        {!(window.location.pathname === "/") && (
                             <div className={styles.recordWrapperSecondary}>
                                 <div className={styles.logo}>
                                     <img alt="logo" src={logo} />
@@ -88,7 +88,7 @@ export const Footer = () => {
                             <a href="#" className={styles.personalS}>Пользовательское соглашение</a>
                         </div>
                     </div>
-                    {(window.location.pathname === "/" || window.location.pathname === "/contacts") && <div className={styles.getNews}>
+                    {(window.location.pathname === "/") && <div className={styles.getNews}>
                         <div className={styles.getNewsTitle}>
                             <img alt="logo" src={logo} />
                             <p>НОЦ Инфохимии</p>
