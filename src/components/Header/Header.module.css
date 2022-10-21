@@ -369,7 +369,6 @@
 .menuSubItem__mobile {
     padding: 10px 0;
     background-color: white;
-    border-bottom: 1px solid #EBEBEB;
 
 }
 
@@ -465,4 +464,21 @@
 
 .logo:hover {
     transform: scale(1.05);
+}
+
+.burger span {
+    background-color: white;
+}
+
+.navitemExternal__mobile {
+    background-color: white;
+}
+
+.menuSubItem__mobile {
+    background-color: black;
+    color: white;
+}
+
+.buttons {
+    display: none;
 }

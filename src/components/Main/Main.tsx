@@ -101,7 +101,7 @@ export const Main = () => {
                 <div
                     className={styles.pages}>
                     <div className={styles.bgImages}>
-                        <picture>
+                        <picture className={styles.firstBg}>
                             <source srcSet={icon1Webp} type="image/webp" />
                             <img alt="image" src={icon1} />
                         </picture>
@@ -109,7 +109,7 @@ export const Main = () => {
                             <source srcSet={icon2Webp} className={styles.center} type="image/webp" />
                             <img className={styles.center} alt="image" src={icon2} />
                         </picture>
-                        <picture>
+                        <picture className={styles.thirdBg}>
                             <source srcSet={icon3Webp} type="image/webp" />
                             <img alt="image" src={icon3} />
                         </picture>

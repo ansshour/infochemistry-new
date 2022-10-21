@@ -282,6 +282,7 @@
     padding: 85px 72px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    border-radius: 9px;
 }
 
 .eventsTitle {
@@ -367,3 +368,161 @@
 }
 
 .advantagesImgWrapper {}
+
+
+@media (max-width: 1312px) {
+    .top {
+        grid-template-columns: 1fr;
+    }
+
+    .title {
+        font-size: 34px;
+        line-height: 1;
+    }
+
+    .titleDesc {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .toggleLang {
+        display: none;
+    }
+
+    .links div {
+        display: none;
+    }
+
+    .gif {
+        top: -580px;
+        right: -350px;
+        transform: scale(0.6);
+    }
+
+    .infochemistryDesc {
+        margin-bottom: 80px;
+    }
+
+    .infochemistryTitle {
+        text-align: start;
+        font-size: 34px;
+    }
+
+    .infochemistryText {
+        text-align: start;
+        font-size: 16px;
+    }
+
+    .bgImages {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+
+    .firstBg,
+    .thirdBg {
+        align-self: flex-end;
+        transform: translateX(30%);
+    }
+
+    .pages__links {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .advantages .title {
+        font-size: 34px;
+        line-height: 1;
+    }
+
+    .advantages .desc {
+        font-size: 16px;
+    }
+
+    .advantagesWrapp {
+        flex-direction: column;
+    }
+
+    .advantagesMain {
+        flex-basis: auto;
+    }
+
+    .advantagesBg {
+        top: 280px;
+        width: 800px;
+        right: -150px;
+    }
+
+    .eventsRight {
+        display: none;
+    }
+
+    .eventsInner {
+        padding: 36px 10px;
+        grid-template-columns: 1fr;
+    }
+
+    .eventsTitle {
+        font-size: 34px;
+        line-height: 1;
+    }
+
+    .eventsDesc {
+        font-size: 16px;
+        margin-top: 14px;
+        margin-bottom: 14px;
+    }
+
+    .partnersText {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .partnersTitle {
+        font-size: 34px;
+        line-height: 1;
+    }
+
+    .partnersDesc {
+        font-size: 16px;
+        line-height: 1;
+    }
+
+    .partnersImage1 {
+        display: none;
+    }
+
+    .partnersImage2 {
+        top: 50px;
+        transform: translateY(60%) translateX(30px);
+        width: 234px;
+    }
+
+    .partnersImage3 {
+        top: 50px;
+        transform: translateY(105%);
+        width: 221px;
+    }
+
+    .advantages {
+        padding-bottom: 80px;
+    }
+
+    .partners {
+        padding-top: 120px;
+    }
+
+    .infochemistryText,
+    .infochemistryDesc {
+        text-align: start;
+        margin-left: 0;
+    }
+
+    .pagesLink {
+        width: 100%;
+    }
+}

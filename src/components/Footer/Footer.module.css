@@ -244,3 +244,58 @@
     font-weight: 800;
     font-size: 28.08px;
 }
+
+@media (max-width: 1312px) {
+    .getNews {
+        padding: 15px 15px 30px 15px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .getNews {
+        width: auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer {
+        display: block;
+    }
+}
+
+@media (max-width: 670px) {
+    .left {
+        display: none;
+    }
+
+    .right {
+        display: block;
+    }
+
+    .itmo {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .getNewsTitle p {
+        font-size: 16px;
+    }
+
+    .getNewsTitle img {
+        height: 25px;
+    }
+
+    .getNewsTitle {
+        margin-bottom: 5px;
+        gap: 9px;
+    }
+
+    .descNews {
+        font-size: 15px;
+    }
+}
