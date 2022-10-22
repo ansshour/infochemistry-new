@@ -90,3 +90,23 @@
 
 
 .wrapper {}
+
+@media (max-width: 718px) {
+    .top {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .bottomList {
+        grid-template-columns: 1fr;
+    }
+
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .person {
+        grid-template-columns: 80px 1fr;
+    }
+}

@@ -109,10 +109,14 @@
     padding: 5px 10px;
     padding-bottom: 3px;
     cursor: pointer;
-    margin-bottom: 34px;
     color: #858585;
     transition: color 0.3s;
     user-select: none;
+    margin-bottom: 10px;
+}
+
+.personalitiesCategories {
+    margin-bottom: 34px;
 }
 
 .personalitiesCategory:hover {
@@ -123,7 +127,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 25px;
 }
 
 .personalitiesCategory.active {
@@ -140,4 +143,19 @@
 
 .empty {
     min-height: 500px;
+}
+
+@media (max-width: 800px) {
+    .personalitiesCards {
+        grid-template-columns: 1fr;
+    }
+
+    .personalitiesCategories {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    .personalitiesCategory {
+        flex-shrink: 0;
+    }
 }

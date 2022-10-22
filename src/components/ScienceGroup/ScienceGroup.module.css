@@ -54,3 +54,7 @@
     left: -730px;
     top: 0;
 }
+
+.wrapper {
+    overflow: hidden;
+}

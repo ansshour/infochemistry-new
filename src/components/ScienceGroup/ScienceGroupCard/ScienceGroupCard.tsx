@@ -2,7 +2,6 @@ import styles from "./ScienceGroupCard.module.css";
 
 
 export const ScienceGroupCard: React.FC<any> = ({ items }) => {
-    console.log(items)
     return (
         <div className={styles.container}>
             <p className={styles.name}></p>

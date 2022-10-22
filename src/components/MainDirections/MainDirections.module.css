@@ -59,3 +59,9 @@
     width: 100%;
     overflow: hidden;
 }
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}

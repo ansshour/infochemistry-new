@@ -265,8 +265,14 @@
 }
 
 @media (max-width: 670px) {
-    .left {
-        display: none;
+    .recordBlockSecondary {
+        margin-right: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .logo {
+        margin-left: 20px;
     }
 
     .right {
@@ -297,5 +303,18 @@
 
     .descNews {
         font-size: 15px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .recordWrapperSecondary {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 490px) {
+    .inputBlock {
+        display: block;
     }
 }

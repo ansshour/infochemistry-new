@@ -31,7 +31,6 @@ export const Quote: React.FC<any> = ({ authors, name, place, code, gost_citation
     const copyText = () => {
         const text = document.querySelector("#toCopy")?.innerHTML;
         navigator.clipboard.writeText(text);
-        console.log(text)
     }
 
     return (

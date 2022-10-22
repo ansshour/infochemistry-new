@@ -51,7 +51,7 @@ export const ScienceGroup = () => {
     }, [])
 
     return (
-        <>
+        <div className={styles.wrapper}>
             <Breadcrumbs info={info} />
             {loader ? <Loader2 /> : (
                 <div className={styles.container}>
@@ -62,6 +62,6 @@ export const ScienceGroup = () => {
                     </div>
                 </div>
             )}
-        </>
+        </div>
     )
 }
