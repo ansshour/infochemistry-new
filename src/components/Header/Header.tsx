@@ -2,7 +2,7 @@ import { Button } from "../UI/Button/Button"
 import styles from "./Header.module.css"
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import logo from "./res/logo.svg"
+import logo from "./res/logo.png"
 import logo_eng from "./res/logo_eng.png"
 import { useTranslation } from "react-i18next"
 import "../../utils/i18next"
@@ -195,7 +195,7 @@ export const Header = () => {
                     <nav className={styles.nav}>
                         <ul>
                             <Link to="/" className={styles.mainPageLink}>
-                                <img src={lang === "ru" ? logo : logo} className={styles.logo} alt="logo" />
+                                <img src={lang === "ru" ? logo : logo} className={styles.logo} alt="logo" width={106} />
                             </Link>
                             {headerItems.map(({ name, link, subElems }) => {
                                 return (
@@ -239,14 +239,14 @@ export const Header = () => {
                         {headerItems.map(({ name, link, subElems }, i: number) => (
                             <div className={styles.wrapper__navitems__mobile} key={name}>
                                 <div className={styles.navItem__mobile}>
-                                    <Link to={link}>
+                                    <a href={link}>
                                         <div className={[styles.navitemExternal__mobile, styles.container__mobile].join(" ")} onClick={() => { mobileMenuController(i) }}>
                                             <p>{name}</p>
                                             {subElems && <img src={arrow} alt="arrow" className={activeElem?.includes(i) ? [styles.arrow, styles.active].join(" ") : styles.arrow} />}
                                         </div>
-                                    </Link>
+                                    </a>
                                     <div className={activeElem?.includes(i) ? [styles.subElems__mobile, styles.show].join(" ") : styles.subElems__mobile}>
-                                        {subElems?.map(({ name, link }) => <Link to={link} key={name}><div className={styles.menuSubItem__mobile}><p className={styles.container__mobile}>{name}</p></div></Link>)}
+                                        {subElems?.map(({ name, link }) => <a href={link} key={name}><div className={styles.menuSubItem__mobile}><p className={styles.container__mobile}>{name}</p></div></a>)}
                                     </div>
                                 </div>
                             </div>
@@ -259,9 +259,9 @@ export const Header = () => {
                             <span onClick={() => { changeLanguage("en") }} style={localStorage.getItem("i18nextLng") === "en" ? { textDecoration: "underline" } : {}}>EN</span>
                         </div>
                         {!isAuth ? (
-                            <Link to={"/auth"}><Button>{t("header.login")}</Button></Link>
+                            <Link to={"/auth"}><Button2 type={3}>{t("header.login")}</Button2></Link>
                         ) : (
-                            <Button onClick={logout}>{t("header.logout")}</Button>
+                            <Button2 onClick={logout} type={3}>{t("header.logout")}</Button2>
                         )}
                     </div>
                 </nav>

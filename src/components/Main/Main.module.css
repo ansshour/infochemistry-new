@@ -526,3 +526,8 @@
         width: 100%;
     }
 }
+
+.eventsWrapper,
+.advantagesWrapper {
+    background-color: white;
+}

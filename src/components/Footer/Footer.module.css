@@ -315,6 +315,6 @@
 
 @media (max-width: 490px) {
     .inputBlock {
-        display: block;
+        display: flex;
     }
 }
