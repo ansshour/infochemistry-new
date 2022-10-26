@@ -145,6 +145,8 @@
     font-weight: 400;
     font-size: 18px;
     margin-bottom: 27px;
+    position: relative;
+    z-index: 1000;
 }
 
 .labsBlocks {
@@ -172,6 +174,8 @@
     width: 100%;
     max-width: 888px;
     margin-bottom: 152px;
+    position: relative;
+    z-index: 1000;
 }
 
 .educationSections {
@@ -201,4 +205,115 @@
 
 .wrapper {
     overflow: hidden;
+}
+
+
+@media (max-width: 1440px) {
+    .imageBlock {
+        transform: scale(0.9);
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .imageBlock {
+        transform: scale(0.8) translateX(-100px);
+        margin-bottom: 80px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .imageBlock {
+        transform: scale(0.7) translateX(-200px);
+    }
+
+    .title {
+        margin-bottom: 50px;
+    }
+
+    .imageTitle {
+        text-align: center;
+        font-size: 60px;
+        width: 800px;
+        top: 100px;
+        left: 125px;
+    }
+}
+
+
+@media (max-width: 793px) {
+    .imageTitle {
+        left: 50px;
+    }
+
+    .imageBlock {
+        margin: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .imageTitle {
+        left: 0px;
+    }
+}
+
+@media (max-width: 550px) {
+    .imageTitle {
+        left: -50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .imageTitle {
+        left: -100px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .advantages {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .labsBlocks {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .educationSections {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .educationImage {
+        width: 100%;
+    }
+
+    .advantagesImage {
+        width: 100%;
+    }
+
+    .partners {
+        margin-bottom: 58px;
+    }
+
+    .cube {
+        width: 300px;
+        right: -140px;
+        top: 180px;
+    }
+
+    .advantagesTitle,
+    .labsTitle,
+    .partnersTitle,
+    .educationTitle {
+        font-size: 24px;
+    }
+
+    .title {
+        margin-bottom: 10px;
+    }
+
 }

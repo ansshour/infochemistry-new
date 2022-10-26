@@ -239,3 +239,36 @@
     top: 7px;
     cursor: pointer;
 }
+
+@media (max-width: 1100px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .avatarBlock {
+        width: 200px;
+    }
+
+    .descContent {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .input {
+        width: 150px;
+    }
+
+}
+
+
+@media (max-width: 455px) {
+    .container {
+        margin: 20px 10px;
+        margin-bottom: 0;
+    }
+
+    .mainInfo {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}

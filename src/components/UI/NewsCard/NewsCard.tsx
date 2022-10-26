@@ -8,10 +8,11 @@ type Props = {
     text: string;
     date: string;
     category: string;
+    style?: any;
 }
 
 
-export const NewsCard: React.FC<Props> = ({ image, text, date, category }) => {
+export const NewsCard: React.FC<Props> = ({ image, text, date, category, style }) => {
 
     const { t } = useTranslation()
 
@@ -100,7 +101,7 @@ export const NewsCard: React.FC<Props> = ({ image, text, date, category }) => {
     }
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} style={style}>
             <div>
                 <div className={styles.image} style={{ backgroundImage: `url(${image})` }}>
 

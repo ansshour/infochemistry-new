@@ -99,7 +99,7 @@ export const About = () => {
                                 в целом.</p>
                         </div>
                         <div className={styles.advantages__right}>
-                            <img alt="advantages" src={advantages} />
+                            <img alt="advantages" src={advantages} className={styles.advantagesImage} />
                         </div>
                     </div>
                     <div className={styles.labs}>
@@ -128,7 +128,7 @@ export const About = () => {
                                 Подготовка специалистов осуществляется по совершенно новому направлению, аналогов которого нет в России.  Студенты имеют уникальную возможность совершенствовать английский язык, обучаясь вместе с носителями языка и общаясь с преподавателями из разных стран.
                             </p>
                             <div>
-                                <img alt="image" src={education} />
+                                <img alt="image" src={education} className={styles.educationImage} />
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import { Link } from "react-router-dom"
 import { Breadcrumbs } from "../UI/Breadcrumbs/Breadcrumbs"
 import { Button } from "../UI/Button/Button"
@@ -27,6 +27,8 @@ export const News = () => {
 
     const [loader, setLoader] = useState(true)
 
+    const containerRef = useRef()
+
     const info = [
         { name: t("newsPage.breadcrumbs.main"), link: "/" },
         { name: t("newsPage.breadcrumbs.news"), link: "/news" },
@@ -38,11 +40,11 @@ export const News = () => {
     const [search, setSearch] = useState("");
     const [isNext, setIsNext] = useState<any>(null)
     const [activeItemsSections, setActiveItemsSections] = useState({
-        video: 3,
-        event: 3,
-        media_on_us: 3,
-        external: 3,
-        other: 3
+        video: window.innerWidth > 991 ? 3 : 1000000000,
+        event: window.innerWidth > 991 ? 3 : 1000000000,
+        media_on_us: window.innerWidth > 991 ? 3 : 100000000,
+        external: window.innerWidth > 991 ? 3 : 100000000000,
+        other: window.innerWidth > 991 ? 3 : 100000000000
     })
 
     let currentPs = 10000000;
@@ -140,6 +142,9 @@ export const News = () => {
         fakeLoader()
     }, [])
 
+
+    let containerWidth = 100;
+
     return (
         <>
             <Breadcrumbs info={info} />
@@ -185,7 +190,7 @@ export const News = () => {
                             <>
                                 {sections.video.length ? <>
                                     <p className={styles.categoryFirstTitle}>Видео</p>
-                                    <div className={styles.first}>
+                                    <div className={styles.first} style={window.innerWidth < 991 ? { gridTemplateColumns: `repeat(${sections.video.length}, 100%)`, overflowX: "scroll" } : {}}>
                                         {sections.video?.map(({ preview, headline, publication_date, section, id }: any, i: number) => {
                                             return (
                                                 i < activeItemsSections.video ? (<Link to={`/news/${id}`} key={i}><NewsCard key={i} image={preview} text={headline} date={publication_date} category={section} /></Link>) : ""
@@ -198,7 +203,7 @@ export const News = () => {
                                 </> : ""}
                                 {sections.event.length ? <>
                                     <p className={styles.categoryFirstTitle}>Мероприятия</p>
-                                    <div className={styles.first}>
+                                    <div className={styles.first} style={window.innerWidth < 991 ? { gridTemplateColumns: `repeat(${sections.event.length}, 100%)`, overflowX: "scroll" } : {}}>
                                         {sections.event?.map(({ preview, headline, publication_date, section, id }: any, i: number) => {
                                             return (
                                                 i < activeItemsSections.event ? (<Link to={`/news/${id}`} key={i}><NewsCard key={i} image={preview} text={headline} date={publication_date} category={section} /></Link>) : ""
@@ -206,12 +211,12 @@ export const News = () => {
                                         })}
                                     </div>
                                     {activeItemsSections.event < sections.event.length && <div className={styles.openAllVideosWrapper}>
-                                        <p className={styles.openAllVideos} onClick={() => setActiveItemsSections({ ...activeItemsSections, event: sections.event.length })}>Все видео категории</p>
+                                        <p className={styles.openAllVideos} onClick={() => setActiveItemsSections({ ...activeItemsSections, event: sections.event.length })}>Все новости категории</p>
                                     </div>}
                                 </> : ""}
                                 {sections.media_on_us.length ? <>
                                     <p className={styles.categoryFirstTitle}>СМИ о НОЦ Инфохимии</p>
-                                    <div className={styles.first}>
+                                    <div className={styles.first} style={window.innerWidth < 991 ? { gridTemplateColumns: `repeat(${sections.media_on_us.length}, 100%)`, overflowX: "scroll" } : {}}>
                                         {sections.media_on_us?.map(({ preview, headline, publication_date, section, id }: any, i: number) => {
                                             return (
                                                 i < activeItemsSections.media_on_us ? (<Link to={`/news/${id}`} key={i}><NewsCard key={i} image={preview} text={headline} date={publication_date} category={section} /></Link>) : ""
@@ -224,7 +229,7 @@ export const News = () => {
                                 </> : ""}
                                 {sections.external.length ? <>
                                     <p className={styles.categoryFirstTitle}>Внешний источник</p>
-                                    <div className={styles.first}>
+                                    <div className={styles.first} style={window.innerWidth < 991 ? { gridTemplateColumns: `repeat(${sections.external.length}, 100%)`, overflowX: "scroll" } : {}}>
                                         {sections.external?.map(({ preview, headline, publication_date, section, id }: any, i: number) => {
                                             return (
                                                 i < activeItemsSections.external ? (<Link to={`/news/${id}`} key={i}><NewsCard key={i} image={preview} text={headline} date={publication_date} category={section} /></Link>) : ""
@@ -237,7 +242,7 @@ export const News = () => {
                                 </> : ""}
                                 {sections.other.length ? <>
                                     <p className={styles.categoryFirstTitle}>Другое</p>
-                                    <div className={styles.first}>
+                                    <div className={styles.first} style={window.innerWidth < 991 ? { gridTemplateColumns: `repeat(${sections.other.length}, 100%)`, overflowX: "scroll" } : {}}>
                                         {sections.other?.map(({ preview, headline, publication_date, section, id }: any, i: number) => {
                                             return (
                                                 i < activeItemsSections.other ? (<Link to={`/news/${id}`} key={i}><NewsCard key={i} image={preview} text={headline} date={publication_date} category={section} /></Link>) : ""

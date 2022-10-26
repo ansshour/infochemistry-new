@@ -151,3 +151,21 @@
     font-weight: 500;
     font-size: 20px;
 }
+
+@media (max-width: 991px) {
+    .vacancyContainer {
+        flex-direction: column;
+
+    }
+
+    .vacancyCards {
+        order: 1;
+        border: none;
+    }
+
+    .categoryBlock {
+        order: 0;
+        margin: 12px 0;
+        padding-left: 0;
+    }
+}

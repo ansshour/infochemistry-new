@@ -35,3 +35,10 @@
 .record>div {
     margin-bottom: 50px;
 }
+
+@media (max-width: 991px) {
+    .container {
+        margin: 20px 15px;
+        padding: 0;
+    }
+}

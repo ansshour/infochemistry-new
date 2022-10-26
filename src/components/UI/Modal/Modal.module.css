@@ -25,6 +25,7 @@
     max-height: 885px;
     position: relative;
     border-radius: 30px;
+    margin: 50px 10px;
 }
 
 .modal.active {

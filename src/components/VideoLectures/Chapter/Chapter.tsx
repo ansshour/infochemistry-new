@@ -58,11 +58,12 @@ export const Chapter: React.FC<any> = ({ title, icon, numberVideos, videos, id, 
                     <span className={styles.moreBtn} onClick={() => { setIsShowAll(true) }}>{t("videolectures.more")}</span>
                 )}
             </div>
-            <div className={styles.videosContainer}>
+            <div className={styles.videosContainer} style={isShowAll && window.innerWidth <= 991 ? { gridTemplateColumns: `repeat(${videos.length}, 100%)`, overflowX: "scroll" } : {}}>
                 {
                     videos.map(({ preview, name, name_eng, teacher, updated_at, id }: any, i: number) => {
                         if (isShowAll) {
                             return <VideoCard
+
                                 image={preview}
                                 name={lang === "ru" ? name : name_eng}
                                 authorName={lang === "ru" ? `${teacher.last_name} ${teacher.first_name} ${teacher.middle_name}` : `${teacher.last_name_eng} ${teacher.first_name_eng} ${teacher.middle_name_eng}`}
@@ -70,7 +71,7 @@ export const Chapter: React.FC<any> = ({ title, icon, numberVideos, videos, id, 
                                 id={id}
                                 key={id} />
                         } else {
-                            if (i < 3) {
+                            if ((window.innerWidth > 991 && i < 3) || (window.innerWidth <= 991 && i < 1)) {
                                 return <VideoCard
                                     image={preview}
                                     name={lang === "ru" ? name : name_eng}
