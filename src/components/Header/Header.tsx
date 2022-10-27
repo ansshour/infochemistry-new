@@ -44,6 +44,14 @@ export const Header = () => {
     const [activeElem, setActiveElem] = useState<number[]>([]);
     const [authHeader, setAuthHeader] = useState<any>("empty")
 
+    useEffect(() => {
+        if (menuOpen) {
+            document.querySelector("html").style.overflowY = "hidden"
+        } else {
+            document.querySelector("html").style.overflowY = ""
+        }
+    }, [menuOpen])
+
 
 
     const { t, i18n } = useTranslation();

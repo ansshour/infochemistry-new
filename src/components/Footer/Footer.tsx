@@ -86,7 +86,7 @@ export const Footer = () => {
                                 <a href="#" className={styles.link}>Онлайн-образование</a>
                             </div>
                             <a href="#" className={styles.personalS}>Пользовательское соглашение</a>
-                            <p className={[styles.itmo, styles.mobile].join(" ")}>© 2022 ITMO University. All rights reserved</p>
+                            {/* <p className={[styles.itmo, styles.mobile].join(" ")}>© 2022 ITMO University. All rights reserved</p> */}
                         </div>
                     </div>
                     {(window.location.pathname === "/") && <div className={styles.getNews}>

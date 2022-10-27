@@ -443,10 +443,6 @@
         font-size: 16px;
     }
 
-    .advantagesWrapp {
-        flex-direction: column;
-    }
-
     .advantagesMain {
         flex-basis: auto;
     }
@@ -530,4 +526,32 @@
 .eventsWrapper,
 .advantagesWrapper {
     background-color: white;
+}
+
+
+.advantagesBlocks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    position: relative;
+}
+
+
+@media (max-width: 1200px) {
+    .advantagesBlocks {
+        display: block;
+    }
+
+    .desc {
+        margin-bottom: 30px;
+    }
+
+    .advantagesInfo {
+        margin-bottom: 20px;
+    }
+
+    .infochemistryDesc {
+        z-index: 0;
+    }
 }

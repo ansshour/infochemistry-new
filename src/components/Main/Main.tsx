@@ -133,35 +133,37 @@ export const Main = () => {
             </div>
             <div className={styles.advantages}>
                 <div className={styles.container}>
-                    <motion.div className={styles.advantagesWrapp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.8 }}>
+                    <motion.div className={styles.advantagesWrapp}>
                         <img className={styles.advantagesBg} alt="advantages" src={bgAdvantagesWebp} />
-                        <motion.div className={styles.advantagesMain} variants={advantagesAnim}>
-                            <p className={styles.title}>Преимущества программ</p>
-                            <p className={styles.desc}>Здесь изучают фундаментальную и прикладную химию, химические технологий, биотехнологии, микробиологию, математику, информатику, физику и даже искусство. </p>
-                        </motion.div>
-                        <motion.div className={styles.advantagesInfo} variants={advantagesAnim}>
-                            <p className={styles.advantagesTitle}>Уникальность</p>
-                            <p className={styles.advantagesDesc}>Уникальная программа по подготовке специалистов в области сложных систем химии и биологии (ближайший аналог - Harvard-MIT Program in Health Sciences and Technology)</p>
-                        </motion.div>
-                        <motion.div className={styles.advantagesInfo} variants={advantagesAnim}>
-                            <p className={styles.advantagesTitle}>Стажировки</p>
-                            <p className={styles.advantagesDesc}>Оплачиваемые стажировки 1-5 месяцев в университетах-партнерах по всему миру
-                            </p>
-                        </motion.div>
-                        <motion.div className={styles.advantagesInfo} variants={advantagesAnim}>
-                            <p className={styles.advantagesTitle}>Стажировки</p>
-                            <p className={styles.advantagesDesc}>Оплачиваемые стажировки 1-5 месяцев в университетах-партнерах по всему миру
-                            </p>
-                        </motion.div>
-                        <motion.div className={styles.advantagesInfo} variants={advantagesAnim}>
-                            <p className={styles.advantagesTitle}>Стажировки</p>
-                            <p className={styles.advantagesDesc}>Оплачиваемые стажировки 1-5 месяцев в университетах-партнерах по всему миру
-                            </p>
-                        </motion.div>
-                        <motion.div className={styles.advantagesInfo} variants={advantagesAnim}>
-                            <p className={styles.advantagesTitle}>Стажировки</p>
-                            <p className={styles.advantagesDesc}>Оплачиваемые стажировки 1-5 месяцев в университетах-партнерах по всему миру
-                            </p>
+                        <motion.div className={styles.advantagesBlocks} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.8 }}>
+                            <motion.div className={styles.advantagesMain} variants={advantagesAnim}>
+                                <p className={styles.title}>Преимущества программ</p>
+                                <p className={styles.desc}>Здесь изучают фундаментальную и прикладную химию, химические технологий, биотехнологии, микробиологию, математику, информатику, физику и даже искусство. </p>
+                            </motion.div>
+                            <motion.div className={styles.advantagesInfo} variants={advantagesAnim}>
+                                <p className={styles.advantagesTitle}>Уникальность</p>
+                                <p className={styles.advantagesDesc}>Уникальная программа по подготовке специалистов в области сложных систем химии и биологии (ближайший аналог - Harvard-MIT Program in Health Sciences and Technology)</p>
+                            </motion.div>
+                            <motion.div className={styles.advantagesInfo} variants={advantagesAnim}>
+                                <p className={styles.advantagesTitle}>Стажировки</p>
+                                <p className={styles.advantagesDesc}>Оплачиваемые стажировки 1-5 месяцев в университетах-партнерах по всему миру
+                                </p>
+                            </motion.div>
+                            <motion.div className={styles.advantagesInfo} variants={advantagesAnim}>
+                                <p className={styles.advantagesTitle}>Стажировки</p>
+                                <p className={styles.advantagesDesc}>Оплачиваемые стажировки 1-5 месяцев в университетах-партнерах по всему миру
+                                </p>
+                            </motion.div>
+                            <motion.div className={styles.advantagesInfo} variants={advantagesAnim}>
+                                <p className={styles.advantagesTitle}>Стажировки</p>
+                                <p className={styles.advantagesDesc}>Оплачиваемые стажировки 1-5 месяцев в университетах-партнерах по всему миру
+                                </p>
+                            </motion.div>
+                            <motion.div className={styles.advantagesInfo} variants={advantagesAnim}>
+                                <p className={styles.advantagesTitle}>Стажировки</p>
+                                <p className={styles.advantagesDesc}>Оплачиваемые стажировки 1-5 месяцев в университетах-партнерах по всему миру
+                                </p>
+                            </motion.div>
                         </motion.div>
                     </motion.div>
                 </div>
