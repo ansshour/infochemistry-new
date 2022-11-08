@@ -46,7 +46,6 @@ export const Editor = () => {
             height: 300,
             minHeight: 300,
             width: 747,
-
         });
 
         (document.querySelector(".note-editable") as any).style.backgroundColor = "white";

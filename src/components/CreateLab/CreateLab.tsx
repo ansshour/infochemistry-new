@@ -393,7 +393,7 @@ export const CreateLab = () => {
                                                     <Select
                                                         options={groups}
                                                         classNamePrefix="custom-select"
-                                                        placeholder="Введите группы, которым будет доступен проект..."
+                                                        placeholder={window.innerWidth > 550 ? "Введите группы, которым будет доступен проект..." : "Введите группы"}
                                                         className="react-select-container"
                                                         theme={theme => customTheme(theme)}
                                                         value={activeGroup}

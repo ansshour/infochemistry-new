@@ -81,3 +81,10 @@
     color: #121212;
     margin-top: -10px;
 }
+
+
+@media (max-width: 600px) {
+    .auth {
+        padding: 25px 30px;
+    }
+}

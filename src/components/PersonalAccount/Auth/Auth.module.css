@@ -80,3 +80,20 @@
     font-family: "Rubik", sans-serif;
     color: #121212;
 }
+
+
+@media (max-width: 600px) {
+    .auth {
+        padding: 25px 30px;
+    }
+
+    .buttons {
+        margin-top: 0;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .inputs {
+        margin-top: 15px;
+    }
+}

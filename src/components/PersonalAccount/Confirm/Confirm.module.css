@@ -96,3 +96,10 @@
 .text {
     margin-bottom: 20px;
 }
+
+
+@media (max-width: 600px) {
+    .auth {
+        padding: 25px 30px;
+    }
+}
